@@ -17,11 +17,11 @@
     display: inline-block;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio-example-link:hover,
-.portfolio-example-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .portfolio-example-bottom {
@@ -64,11 +64,11 @@
     height: 294px;
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio-example-link:hover .hero-img-list-hovered,
-.portfolio-example-link:focus .hero-img-list-hovered {
-    transform: translate(0px, -294px) rotate(0deg);
+    .portfolio-example-link:hover &,
+    .portfolio-example-link:focus & {
+        transform: translate(0px, -294px) rotate(0deg);
+    }
 }
 
 .hero-img-list-hover-desc {

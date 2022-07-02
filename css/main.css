@@ -26,7 +26,12 @@
   overflow: hidden;
 }
 
-h1,
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
 h2,
 h3,
 h4,
@@ -197,6 +202,13 @@ img {
   margin-top: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.input-your-data .input-your-data:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+.input-your-data .input-your-data:focus + .modal-your-icon {
+  fill: var(--modal-button-hov-foc-color);
+}
 
 .input-comment {
   display: flex;
@@ -223,6 +235,10 @@ img {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.txt-comment .txt-comment:focus {
+  border-color: var(--accent-color);
+  outline: none;
 }
 
 .modal-your-icon {
@@ -279,24 +295,8 @@ img {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.send-button:hover,
-.send-button:focus {
+.send-btn:hover .send-btn, .send-btn:focus .send-btn {
   background-color: var(--modal-button-hov-foc-color);
-}
-
-.txt-comment:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
-.input-your-data:focus {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
-
-.input-your-data:focus + .modal-your-icon {
-  fill: var(--modal-button-hov-foc-color);
 }
 
 .checkbox:checked + .modal-icon-check {
@@ -508,6 +508,9 @@ img {
   color: var(--primary-title-color-theme-light);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.studio-hero__modal-button:hover, .studio-hero__modal-button:focus {
+  background-color: var(--modal-button-hov-foc-color);
+}
 
 .modal-button-text {
   color: var(--primary-title-color-theme-light);
@@ -515,11 +518,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-}
-
-.studio-hero__modal-button:hover,
-.studio-hero__modal-button:focus {
-  background-color: var(--modal-button-hov-foc-color);
 }
 
 .about-section-1 {
@@ -652,19 +650,15 @@ img {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border: 1px solid var(--accent-color);
 }
 
 .clients-logo {
-  fill: #AFB1B8;
+  fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-link:hover .clients-logo,
-.clients-link:focus .clients-logo {
+.clients-link:hover .clients-logo, .clients-link:focus .clients-logo {
   fill: var(--accent-color);
 }
 
@@ -749,9 +743,7 @@ img {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team-social-link:hover,
-.team-social-link:focus {
+.team-social-link:hover, .team-social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -763,6 +755,9 @@ img {
 .team-social-icon {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-link:hover .team-social-icon, .team-social-link:focus .team-social-icon {
+  fill: var(--primary-title-color-theme-light);
 }
 
 .footer {
@@ -932,9 +927,7 @@ img {
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-example-link:hover,
-.portfolio-example-link:focus {
+.portfolio-example-link:hover, .portfolio-example-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -979,9 +972,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-example-link:hover .hero-img-list-hovered,
-.portfolio-example-link:focus .hero-img-list-hovered {
+.portfolio-example-link:hover .hero-img-list-hovered, .portfolio-example-link:focus .hero-img-list-hovered {
   transform: translate(0px, -294px) rotate(0deg);
 }
 
@@ -1050,9 +1041,7 @@ img {
   border: 1px solid transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-list-item:hover,
-.button-list-item:focus {
+.button-list-item:hover, .button-list-item:focus {
   background-color: var(--accent-color);
   color: var(--primary-title-color-theme-light);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
